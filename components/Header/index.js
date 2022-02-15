@@ -7,7 +7,7 @@ const Header = () => {
         <div className="flex justify-around">
             <div className="header__logo text-3xl font-bold m-3" >
                 <Link href='/'>
-                    <a>
+                    <a  className='hover:text-green-500'>
                         tails.
                     </a>
                 </Link>
@@ -17,9 +17,9 @@ const Header = () => {
                     {
                         routers.map((router) => {
                             return (
-                                <li key={router.name} className='m-6'>
+                                <li key={router.name} className='m-6 '>
                                     <Link href={router.path}>
-                                        <a>
+                                        <a  className='hover:text-green-500'>
                                             {router.name}
                                         </a>
                                     </Link>
